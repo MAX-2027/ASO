@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Asociación de Empleados del Azuay</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --color-principal: #003b5c;
+      --color-secundario: #0076a3;
+      --color-fondo: #f8f9fa;
+      --color-texto: #333;
+      --sombra: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      background-color: var(--color-fondo);
+      color: var(--color-texto);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--color-principal), var(--color-secundario));
+      color: white;
+      text-align: center;
+      padding: 50px 20px 25px;
+      position: relative;
+    }
+
+    header .top-contacto {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 0.9em;
+      text-align: right;
+      line-height: 1.4;
+    }
+
+    header .top-contacto strong {
+      display: block;
+      font-weight: 600;
+    }
+
+    header .logo {
+      max-width: 160px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    header h1 {
+      font-size: 2.2em;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1em;
+      margin-top: 8px;
+      letter-spacing: 0.5px;
+    }
+
+    nav {
+      background-color: var(--color-principal);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 12px 0;
+    }
+
+    nav a {
+      color: white;
+      margin: 8px 18px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      background: white;
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 40px;
+      box-shadow: var(--sombra);
+    }
+
+    section h2 {
+      color: var(--color-principal);
+      border-bottom: 3px solid var(--color-secundario);
+      display: inline-block;
+      margin-bottom: 20px;
+      padding-bottom: 5px;
+      font-weight: 600;
+      font-size: 1.6em;
+    }
+
+    ul {
+      list-style: disc inside;
+      padding-left: 10px;
+    }
+
+    .iconos-descuentos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-around;
+    }
+
+    .icono-descuento {
+      flex: 1 1 260px;
+      background: #f9f9f9;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+      box-shadow: var(--sombra);
+    }
+
+    .icono-descuento:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+    }
+
+    .icono-descuento img {
+      max-width: 120px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      object-fit: contain;
+    }
+
+    .direccion {
+      font-style: italic;
+      font-size: 0.9em;
+      color: #555;
+      margin-top: 5px;
+    }
+
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 20px;
+    }
+
+    .galeria img {
+      width: 100%;
+      max-width: 320px;
+      border-radius: 10px;
+      box-shadow: var(--sombra);
+      transition: transform 0.2s ease;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: var(--color-principal);
+      color: white;
+      text-align: center;
+      padding: 25px 10px;
+      font-size: 0.95em;
+    }
+
+    footer .creditos {
+      margin-top: 10px;
+      font-size: 0.85em;
+      color: #ccc;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+      }
+
+      nav a {
+        display: block;
+        margin: 6px 0;
+      }
+
+      header .top-contacto {
+        position: static;
+        text-align: center;
+        margin-bottom: 15px;
+      }
+
+      .iconos-descuentos,
+      .galeria {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      section {
+        padding: 25px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="top-contacto">
+      <strong>Asociación de Empleados del Azuay</strong>
+      Dirección: Gran Colombia y esquina, Cuenca<br />
+      Teléfono: 098 888 5004
+    </div>
+
+    <img src="logoASO.jpg" alt="Logo Asociación de Empleados del Azuay" class="logo" />
+    <h1>Asociación de Empleados del Azuay</h1>
+    <p>Unión y Constancia</p>
+  </header>
+
+  <nav>
+    <a href="#beneficios">Beneficios</a>
+    <a href="#programas">Programas</a>
+    <a href="#convenios">Convenios</a>
+    <a href="#descuentos">Descuentos</a>
+    <a href="#galeria">Galería</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <div class="container">
+    <section id="beneficios">
+      <h2>Beneficios</h2>
+      <ul>
+        <li>Ayuda médica una vez al año</li>
+        <li>Ayuda económica en caso de extrema necesidad</li>
+        <li>Ocupación de un espacio en el mausoleo</li>
+        <li>Fondo mortuorio</li>
+        <li>Subvención del 15 % del salario básico al cumplir 30 años de aportes y tener 65 años.</li>
+      </ul>
+    </section>
+
+    <section id="programas">
+      <h2>Programas</h2>
+      <ul>
+        <li>Aniversario</li>
+        <li>Día de la Madre</li>
+        <li>Paseo de Integración</li>
+        <li>Homenaje al Adulto Mayor</li>
+        <li>Navidad (entrega de agasajo navideño)</li>
+      </ul>
+    </section>
+
+    <section id="convenios">
+      <h2>Convenios</h2>
+      <ul>
+        <li><strong>Universidad Estatal Península de Santa Elena:</strong> descuentos en maestrías para socios y familiares.</li>
+        <li><strong>Fundación Funor:</strong> 20 % de descuento.</li>
+        <li><strong>Fundación Hogar del Ecuador</strong></li>
+      </ul>
+    </section>
+
+    <section id="descuentos">
+      <h2>Descuentos</h2>
+      <div class="iconos-descuentos" id="contenedor-descuentos">
+        <div class="icono-descuento">
+          <img src="4D DIGITAL.jpg" alt="4D Digital Estudio de Arquitectura" />
+          <div><strong>4D DIGITAL Estudio de Arquitectura</strong></div>
+          <div class="direccion">
+            Dirección: Sangurima 12-50 entre Juan Montalvo y Tarqui<br />
+            Teléfono: 098 726 1416
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeria">
+      <h2>Galería de Fotos</h2>
+      <div class="galeria">
+        <img src="PASEO DE INTEGRACION 2025.jpg" alt="Paseo de Integración" />
+        <img src="emprendimientos.jpg" alt="Emprendimientos" />
+        <img src="cursos.jpg" alt="Cursos" />
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>
+        <strong>Dirección:</strong> Gran Colombia y esquina, Cuenca<br />
+        <strong>Teléfono:</strong> 098 888 5004
+      </p>
+      <p><span style="font-size: 1.2em;">✅</span> Visitas a esta página: <span id="contador-visitas">0</span></p>
+    </section>
+  </div>
+
+  <footer>
+    © 2025 Asociación de Empleados del Azuay — Todos los derechos reservados
+    <div class="creditos">
+      Página web creada por <strong>4D DIGITAL Estudio de Arquitectura</strong>
+    </div>
+  </footer>
+
+  <script>
+    // Contador de visitas con LocalStorage
+    const contadorElement = document.getElementById('contador-visitas');
+    let visitas = localStorage.getItem('contador_visitas') || 0;
+    visitas++;
+    localStorage.setItem('contador_visitas', visitas);
+    contadorElement.textContent = visitas;
+
+    // Descuentos aleatorios
+    const descuentosOpcionales = [
+      // Grupo 1
+      [
+        {
+          img: "la italiana.jpg",
+          alt: "La Italiana",
+          nombre: "La Italiana",
+          direccion: `
+            <strong>Sucursal San Sebastián:</strong> Baltazara De Calderón y Simón Bolívar<br>
+            <strong>Solano:</strong> Av. Fray Vicente Solano y Alfonso Moreno Mora<br>
+            <strong>Fátima:</strong> Felipe León y Menéndez Pidal<br>
+            <strong>Fábrica:</strong> Av. Octavio Chacón 4-103
+          `
+        },
+        {
+          img: "pigGis.jpg",
+          alt: "PIGGIS",
+          nombre: "PIGGIS",
+          direccion: `
+            Local 1: La Castellana y Segovia, sector Aeropuerto<br />
+            Local 2: Av. 10 de Agosto y Francisco Moscoso<br />
+            Local 3: Av. Primero de Mayo y Pasaje Primero de Mayo
+          `
+        }
+      ],
+      // Grupo 2
+      [
+        {
+          img: "santa cecilia.jpg",
+          alt: "Santa Cecilia",
+          nombre: "Santa Cecilia",
+          direccion: `Mariscal Lamar 2-35 entre Manuel Vega y Tomás Ordoñez, Cuenca`
+        },
+        {
+          img: "m.jpg",
+          alt: "Distribuidora Martínez e Hijos",
+          nombre: "Distribuidora Martínez e Hijos",
+          direccion: `
+            Hurtado de Mendoza 11-60 y Paseo de los Cañaris<br />
+            Telf: 07-2801595 / 07-2800044<br />
+            Email: marhijos@etapanet.com
+          `
+        }
+      ]
+    ];
+
+    const adicionalesFijos = [
+      {
+        img: "CDI.JPG",
+        alt: "CDI",
+        nombre: "CDI",
+        direccion: `
+          Dirección principal: Gran Colombia 11‑02 y General Torres<br>
+          Sucursal: Isabel La Católica y Carlos V (cerca del parque Bilbao)
+        `
+      },
+      {
+        img: "casfa.jpg",
+        alt: "Publicidad",
+        nombre: "Publicidad / Emprendimiento",
+        direccion: `¿Quieres que tu negocio aparezca aquí? Contáctanos.`
+      }
+    ];
+
+    function crearDescuentoHTML(descuento) {
+      const div = document.createElement("div");
+      div.className = "icono-descuento";
+      div.innerHTML = `
+        <img src="${descuento.img}" alt="${descuento.alt}" />
+        <div><strong>${descuento.nombre}</strong></div>
+        <div class="direccion">${descuento.direccion}</div>
+      `;
+      return div;
+    }
+
+    const contenedor = document.getElementById("contenedor-descuentos");
+
+    descuentosOpcionales.forEach(grupo => {
+      const seleccionado = grupo[Math.floor(Math.random() * grupo.length)];
+      contenedor.appendChild(crearDescuentoHTML(seleccionado));
+    });
+
+    adicionalesFijos.forEach(item => {
+      contenedor.appendChild(crearDescuentoHTML(item));
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Asociación de Empleados del Azuay</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-principal: #003b5c;
+      --color-secundario: #0076a3;
+      --color-fondo: #f8f9fa;
+      --color-texto: #333;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: var(--color-fondo);
+      color: var(--color-texto);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--color-principal), var(--color-secundario));
+      color: white;
+      text-align: center;
+      padding: 40px 20px 20px;
+      position: relative;
+    }
+
+    header .top-contacto {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 0.9em;
+      text-align: right;
+      line-height: 1.4;
+    }
+
+    header .top-contacto strong {
+      display: block;
+      font-weight: 600;
+    }
+
+    header .logo {
+      max-width: 180px;
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    header h1 {
+      font-size: 2.4em;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.1em;
+      margin: 10px 0 0 0;
+    }
+
+    nav {
+      background-color: var(--color-principal);
+      text-align: center;
+      padding: 12px 0;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover { color: #ffd700; }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      background: white;
+      border-radius: 10px;
+      padding: 30px;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    section h2 {
+      color: var(--color-principal);
+      border-bottom: 3px solid var(--color-secundario);
+      display: inline-block;
+      margin-bottom: 20px;
+      padding-bottom: 5px;
+      font-weight: 600;
+    }
+
+    ul { list-style: disc inside; }
+
+    .iconos-descuentos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-around;
+    }
+
+    .icono-descuento {
+      flex: 1 1 250px;
+      background: #f1f1f1;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .icono-descuento:hover { transform: translateY(-5px); }
+
+    .icono-descuento img {
+      max-width: 100px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+    }
+
+    .direccion {
+      font-style: italic;
+      font-size: 0.9em;
+      color: #555;
+      margin-top: 5px;
+    }
+
+    footer {
+      background-color: var(--color-principal);
+      color: white;
+      text-align: center;
+      padding: 25px 0;
+      font-size: 0.95em;
+    }
+
+    @media (max-width: 768px) {
+      nav a { display: block; margin: 10px 0; }
+      .iconos-descuentos { flex-direction: column; align-items: center; }
+      header .top-contacto {
+        position: static;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="top-contacto">
+      <strong>Asociación de Empleados del Azuay</strong>
+      Dirección: Gran Colombia y esquina, Cuenca<br>
+      Teléfono: 098 888 5004
+    </div>
+
+    <img src="logoASO.jpg" alt="Logo Asociación de Empleados del Azuay" class="logo">
+    <h1>Asociación de Empleados del Azuay</h1>
+    <p>Unión y Constancia</p>
+  </header>
+
+  <nav>
+    <a href="#beneficios">Beneficios</a>
+    <a href="#programas">Programas</a>
+    <a href="#convenios">Convenios</a>
+    <a href="#descuentos">Descuentos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <div class="container">
+    <section id="beneficios">
+      <h2>Beneficios</h2>
+      <ul>
+        <li>Ayuda médica una vez al año</li>
+        <li>Ayuda económica en caso de extrema necesidad</li>
+        <li>Ocupación de un espacio en el mausoleo</li>
+        <li>Fondo mortuorio</li>
+        <li>Al cumplir 30 años de aportes y tener 65 años de edad, el socio recibe una subvención equivalente al 15 % del salario básico unificado.</li>
+      </ul>
+    </section>
+
+    <section id="programas">
+      <h2>Programas</h2>
+      <ul>
+        <li>Aniversario</li>
+        <li>Día de la Madre</li>
+        <li>Paseo de Integración</li>
+        <li>Homenaje al Adulto Mayor</li>
+        <li>Navidad (entrega de agasajo navideño)</li>
+      </ul>
+    </section>
+
+    <section id="convenios">
+      <h2>Convenios</h2>
+      <ul>
+        <li><strong>Universidad Estatal Península de Santa Elena</strong>: descuentos en maestrías para socios y familiares</li>
+        <li><strong>Fundación Funor</strong>: 20 % de descuento</li>
+        <li><strong>Fundación Hogar del Ecuador</strong></li>
+      </ul>
+    </section>
+
+    <section id="descuentos">
+      <h2>Descuentos</h2>
+      <div class="iconos-descuentos">
+
+        <div class="icono-descuento">
+          <img src="4D DIGITAL.jpg" alt="4D Digital Estudio de Arquitectura">
+          <div><strong>4D DIGITAL Estudio de Arquitectura</strong></div>
+          <div class="direccion">
+            Dirección: Sangurima 12-50 entre Juan Montalvo y Tarqui<br>
+            Teléfono: 098 726 1416
+          </div>
+        </div>
+
+        <div class="icono-descuento">
+          <img src="piggis.jpg" alt="PIGGIS">
+          <div><strong>PIGGIS</strong></div>
+          <div class="direccion">
+            Local 1: La Castellana y Segovia, sector Aeropuerto<br>
+            Local 2: Av. 10 de Agosto y Francisco Moscoso (esquina)<br>
+            Local 3: Av. Primero de Mayo y Pasaje Primero de Mayo
+          </div>
+        </div>
+
+        <div class="icono-descuento">
+          <img src="martinez e hijos.jpg" alt="Distribuidora Martínez e Hijos">
+          <div><strong>Distribuidora Martínez e Hijos</strong></div>
+          <div class="direccion">
+            Dirección: Hurtado de Mendoza 11-60 y Paseo de los Cañaris, Cuenca<br>
+            Teléfonos: 07-2801595 / 07-2800044<br>
+            Email: marhijos@etapanet.com / martinezehijos@marhijos.com
+          </div>
+        </div>
+
+        <div class="icono-descuento">
+          <img src="santa cecilia.jpg" alt="Santa Cecilia">
+          <div><strong>Santa Cecilia</strong></div>
+          <div class="direccion">
+            Dirección: Mariscal Lamar 2-35 entre Manuel Vega y Tomás Ordoñez, Cuenca, Ecuador
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p><strong>Dirección:</strong> Gran Colombia y esquina, Cuenca<br>
+      <strong>Teléfono:</strong> 098 888 5004</p>
+    </section>
+  </div>
+
+  <footer>
+    © 2025 Asociación de Empleados del Azuay — Todos los derechos reservados
+  </footer>
+
+</body>
+</html>
+
